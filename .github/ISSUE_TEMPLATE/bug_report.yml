@@ -1,0 +1,55 @@
+name: 🐛 Bug Report
+description: A bug elsewhere
+title: "[BUG REPORT] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to fill out this report. Please ensure you check whether the error already exists before submitting it!
+
+  - type: textarea
+    id: description
+    attributes:
+      label: The Bug
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe what is happening...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What would you do to reproduce the bug?
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: A complete description of what you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Add screenshots (paste images here) if you deem it necessary.
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Extra info
+      description: Browser version, OS, API environment, etc.
+    validations:
+      required: false
