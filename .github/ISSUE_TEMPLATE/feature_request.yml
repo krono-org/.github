@@ -26,10 +26,12 @@ body:
       required: true
 
   - type: textarea
-    id: alternatives
+    id: dependencies
     attributes:
-      label: Describe alternatives you've considered
-      description: A clear and concise description of any alternative solutions or features you've considered.
+      label: Dependencies
+      description: Link any related issues or pull requests (e.g. Backend implementation).
+      value: |
+        - [ ] Backend implementation: 
     validations:
       required: false
 
