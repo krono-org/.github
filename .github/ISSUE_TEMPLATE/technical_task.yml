@@ -1,0 +1,45 @@
+name: 🛠️ Technical Task
+description: Refactoring, performance, documentation or technical debt
+title: "[TECH] "
+labels: ["refactor"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context & Motivation
+      description: Why is this change necessary? (e.g. Improve performance, Update dependencies, Code cleanup)
+      placeholder: The database queries are slow because we are missing indexes...
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: Technical Goal
+      description: What exactly needs to be done?
+      placeholder: |
+        - Create index on 'users.email'
+        - Refactor the 'AuthService' class
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria (Definition of Done)
+      description: How do we verify this is fixed/improved?
+      placeholder: |
+        - [ ] Query execution time is under 50ms
+        - [ ] All existing tests pass
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Link any related issues.
+      value: |
+        - [ ] Related to: 
+    validations:
+      required: false
